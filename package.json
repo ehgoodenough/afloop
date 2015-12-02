@@ -1,0 +1,11 @@
+{
+  "name": "afloop",
+  "version": "1.0.1",
+  "description": "An animation frame loop.",
+  "main": "index.js",
+  "author": "ehgoodenough",
+  "license": "MIT",
+  "dependencies": {
+    "raf": "^3.1.0"
+  }
+}
