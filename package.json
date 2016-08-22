@@ -1,11 +1,12 @@
 {
   "name": "afloop",
-  "version": "1.0.1",
-  "description": "An animation frame loop.",
+  "version": "1.0.2",
   "main": "index.js",
-  "author": "ehgoodenough",
+  "description": "An animation frame loop.",
+  "author": "Andrew McPherson <@ehgoodenough>",
   "license": "MIT",
-  "dependencies": {
-    "raf": "^3.1.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehgoodenough/afloop"
+  },
 }

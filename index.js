@@ -1,10 +1,8 @@
-var raf = require("raf")
-
 function Afloop(func) {
-    (function loop(tick) {
-        func(Math.min((Date.now() - tick) / 1000, 1000))
-        raf(loop.bind(this, Date.now()))
-    })(Date.now())
+    (function loop(delta) {
+        func(Math.min(window.performance.now() - delta, 1000))
+        window.requestAnimationFrame(loop.bind(this, window.performance.now()))
+    })(window.performance.now())
 }
 
 module.exports = Afloop
