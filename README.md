@@ -1,7 +1,9 @@
 # Afloop #
 
-An animation frame loop. Pronounced "af-loop". This function will be run once every frame, and is passed the delta between each frame, given in seconds.
+An animation frame loop. Pronounced "af-loop". Given a function, it will loop it each and every frame. The function is passed the time between each frame, given in milliseconds, and capped at a second.
 
-    var loop = new Afloop(function(delta) {
-        console.log(delta)
-    })
+```js
+var loop = new Afloop(function(delta) {
+    console.log(delta)
+})
+```
